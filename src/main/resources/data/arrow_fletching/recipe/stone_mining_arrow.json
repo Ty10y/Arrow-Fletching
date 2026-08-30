@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "AAA",
+    "APA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:arrow",
+    "P": "minecraft:stone_pickaxe"
+  },
+  "result": {
+    "id": "arrow_fletching:stone_mining_arrow",
+    "count": 8
+  }
+}

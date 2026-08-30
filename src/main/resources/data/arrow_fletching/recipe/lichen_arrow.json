@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "AAA",
+    "APA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:arrow",
+    "P": "minecraft:glow_lichen"
+  },
+  "result": {
+    "id": "arrow_fletching:lichen_arrow",
+    "count": 8
+  }
+}

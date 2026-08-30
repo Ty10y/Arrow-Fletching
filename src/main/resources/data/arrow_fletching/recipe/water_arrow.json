@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "AAA",
+    "APA",
+    "AAA"
+  ],
+  "key": {
+    "A": "minecraft:arrow",
+    "P": "minecraft:water_bucket"
+  },
+  "result": {
+    "id": "arrow_fletching:water_arrow",
+    "count": 8
+  }
+}

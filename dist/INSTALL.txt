@@ -1,0 +1,61 @@
+Arrow Fletching  v1.1.0  -  Minecraft mod (NeoForge)
+====================================================
+
+WHAT THIS IS
+------------
+Adds 30 craftable arrows, each with its own effect and custom art. Fire them
+from a bow or crossbow.
+
+  Effect arrows : TNT, Water, Lava, Ender, Bee, Wind, Lightning, Dripstone,
+                  Cage, Slime, Fishing Rod, Lichen, Membrane (homing)
+  Ore tiers     : Stone, Flint, Copper, Iron, Gold, Diamond, Netherite (more damage)
+  Fish tiers    : Cod, Salmon, Pufferfish (no slowdown in water)
+  Mining tiers  : Wooden .. Netherite (excavate an NxNxN cube by pickaxe tier)
+
+Most effect arrows are crafted by surrounding a payload item with 8 arrows in a
+crafting table (e.g. 8 arrows around 1 TNT -> 8 TNT Arrows). Ore and fish arrows
+are crafted like a normal arrow with the material as the tip (material/stick/feather).
+Mining arrows use 8 arrows around the matching pickaxe.
+
+
+REQUIREMENTS
+------------
+- Minecraft: Java Edition 26.2
+- Mod loader: NeoForge 26.2.0.69 (or a compatible 26.2 build)
+
+This mod does NOT work on Fabric, Forge, or Bedrock Edition.
+
+
+HOW TO INSTALL  (this is the whole process)
+-------------------------------------------
+1. Install NeoForge for Minecraft 26.2 if you haven't already:
+   - Download the NeoForge 26.2 installer from https://neoforged.net
+   - Run it and choose "Install client".
+   - Launch the Minecraft Launcher once and select the new "NeoForge" profile
+     so the game creates its folders.
+
+2. Find your Minecraft "mods" folder:
+   - Windows:  press Win+R, type  %appdata%\.minecraft\mods  and press Enter
+               (if the "mods" folder doesn't exist, create it)
+   - macOS:    ~/Library/Application Support/minecraft/mods
+   - Linux:    ~/.minecraft/mods
+
+3. Copy the file  arrow_fletching-1.1.0.jar  (included in this zip) into that
+   mods folder. That's it -- do NOT unzip the jar; it goes in whole.
+
+4. Start Minecraft using the NeoForge profile. The arrows will appear in the
+   Combat tab of the creative inventory, and their recipes work in survival.
+
+
+UPDATING / REMOVING
+-------------------
+- To update: delete the old arrow_fletching-*.jar from mods and drop in the new one.
+- To remove: delete arrow_fletching-1.1.0.jar from the mods folder.
+
+
+NOTES
+-----
+- Every player on a multiplayer server needs this mod installed, and the server
+  itself must run it too.
+- If the game crashes on startup, the most likely cause is a NeoForge version
+  that isn't 26.2 -- check that first.
