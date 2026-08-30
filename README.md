@@ -1,4 +1,5 @@
 # Arrow Fletching
+<img width="2730" height="1536" alt="ArrowFletchingBanner" src="https://github.com/user-attachments/assets/5d6aafd7-ea01-4c27-9463-76cf08821c82" />
 
 A NeoForge mod that adds **30 craftable arrows**, each with custom art and its own effect.
 Fire any of them from a bow or crossbow.
@@ -6,7 +7,6 @@ Fire any of them from a bow or crossbow.
 - **Minecraft:** Java Edition 26.2
 - **Loader:** NeoForge 26.2.0.69
 - **Version:** 1.1.0
-- Ships as a single `.jar`.
 
 ## Arrows
 
@@ -46,23 +46,6 @@ those are left floating). Heavier tiers also cost more bow durability per shot.
 | Gold | 5³ | iron level (bumped to match cost) | +4 |
 | Diamond | 7³ | diamond level | +6 |
 | Netherite | 11³ | all harvestable blocks | +10 |
-
-## Building
-
-Requires **JDK 25** (Minecraft/NeoForge 26.2 needs it). From the project folder:
-
-```bash
-./gradlew build
-```
-
-Output: `build/libs/arrow_fletching-1.1.0.jar`. To run a dev client:
-
-```bash
-./gradlew runClient
-```
-
-> Note: launch the client with `./gradlew runClient`, not the IDE Run button — Gradle
-> builds fresh output, while an IDE's `bin/` folder can go stale.
 
 ## Installing
 
