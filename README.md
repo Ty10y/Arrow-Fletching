@@ -6,7 +6,8 @@ Fire any of them from a bow or crossbow.
 
 - **Minecraft:** Java Edition 26.2
 - **Loader:** NeoForge 26.2.0.69
-- **Version:** 1.1.0
+- **Version:** 1.2.0
+- Ships as a single `.jar`.
 
 ## Arrows
 
@@ -47,10 +48,23 @@ those are left floating). Heavier tiers also cost more bow durability per shot.
 | Diamond | 7³ | diamond level | +6 |
 | Netherite | 11³ | all harvestable blocks | +10 |
 
+## Fletching Table
+
+Right-click a vanilla **fletching table** to open an arrow upgrade station. Every
+arrow shares one recipe: **8 arrows + 1 modifier**. Crafted at a regular crafting
+table that yields **8**; crafted at the fletching table it yields **16** for the
+same modifier cost (1), making the table the efficient parallel path. A plain
+`minecraft:arrow` craft now yields 8, so one batch feeds one upgrade.
+
+Recipes unlock (with a toast) once you hold both a plain arrow and that arrow's
+modifier. **JEI** integration shows the Fletching Table category and its recipes
+(display populates in singleplayer this MC version; the table itself works in
+multiplayer).
+
 ## Installing
 
 1. Install NeoForge 26.2.0.69 (https://neoforged.net) and run the game once.
-2. Put `arrow_fletching-1.1.0.jar` in your `mods/` folder
+2. Put `arrow_fletching-1.2.0.jar` in your `mods/` folder
    (`%appdata%\.minecraft\mods` on Windows).
 3. Launch the NeoForge profile. Arrows appear in the Combat creative tab and craft in survival.
 

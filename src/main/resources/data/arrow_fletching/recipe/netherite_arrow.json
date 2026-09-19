@@ -2,17 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "M",
-    "S",
-    "F"
+    "AAA",
+    "APA",
+    "AAA"
   ],
   "key": {
-    "M": "minecraft:netherite_ingot",
-    "S": "minecraft:stick",
-    "F": "minecraft:feather"
+    "A": "minecraft:arrow",
+    "P": "minecraft:netherite_ingot"
   },
   "result": {
     "id": "arrow_fletching:netherite_arrow",
-    "count": 4
+    "count": 8
   }
 }

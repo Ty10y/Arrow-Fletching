@@ -2,17 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "M",
-    "S",
-    "F"
+    "AAA",
+    "APA",
+    "AAA"
   ],
   "key": {
-    "M": "minecraft:cobblestone",
-    "S": "minecraft:stick",
-    "F": "minecraft:feather"
+    "A": "minecraft:arrow",
+    "P": "minecraft:cobblestone"
   },
   "result": {
     "id": "arrow_fletching:stone_arrow",
-    "count": 4
+    "count": 8
   }
 }

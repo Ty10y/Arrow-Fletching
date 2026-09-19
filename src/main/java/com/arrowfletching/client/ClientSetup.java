@@ -2,16 +2,23 @@ package com.arrowfletching.client;
 
 import com.arrowfletching.ArrowFletching;
 import com.arrowfletching.entity.ModEntities;
+import com.arrowfletching.menu.ModMenus;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 
 /**
  * Client-only registrations. Runs on the mod event bus, physical client only.
  */
 @EventBusSubscriber(modid = ArrowFletching.MOD_ID, value = Dist.CLIENT)
 public class ClientSetup {
+
+    @SubscribeEvent
+    public static void registerScreens(RegisterMenuScreensEvent event) {
+        event.register(ModMenus.FLETCHING_TABLE.get(), FletchingTableScreen::new);
+    }
 
     @SubscribeEvent
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {

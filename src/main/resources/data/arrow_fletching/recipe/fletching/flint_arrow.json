@@ -1,0 +1,11 @@
+{
+  "type": "arrow_fletching:fletching",
+  "arrow": "minecraft:arrow",
+  "arrow_count": 8,
+  "modifier": "minecraft:flint",
+  "modifier_count": 1,
+  "result": {
+    "id": "arrow_fletching:flint_arrow",
+    "count": 16
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "arrow_fletching:fletching",
+  "arrow": "minecraft:arrow",
+  "arrow_count": 8,
+  "modifier": "minecraft:lava_bucket",
+  "modifier_count": 1,
+  "result": {
+    "id": "arrow_fletching:lava_arrow",
+    "count": 16
+  }
+}
