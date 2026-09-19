@@ -28,5 +28,6 @@
   "item.arrow_fletching.golden_mining_arrow": "Golden Mining Arrow",
   "item.arrow_fletching.diamond_mining_arrow": "Diamond Mining Arrow",
   "item.arrow_fletching.netherite_mining_arrow": "Netherite Mining Arrow",
-  "item.arrow_fletching.membrane_arrow": "Membrane Arrow"
+  "item.arrow_fletching.membrane_arrow": "Membrane Arrow",
+  "container.arrow_fletching.fletching_table": "Fletching Table"
 }

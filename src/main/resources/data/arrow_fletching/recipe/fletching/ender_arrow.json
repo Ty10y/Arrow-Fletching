@@ -1,0 +1,11 @@
+{
+  "type": "arrow_fletching:fletching",
+  "arrow": "minecraft:arrow",
+  "arrow_count": 8,
+  "modifier": "minecraft:ender_pearl",
+  "modifier_count": 1,
+  "result": {
+    "id": "arrow_fletching:ender_arrow",
+    "count": 16
+  }
+}

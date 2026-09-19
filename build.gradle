@@ -38,6 +38,15 @@ neoForge {
 repositories {
     mavenCentral()
     maven { url = 'https://maven.neoforged.net/releases' }
+    // JEI (Just Enough Items) — recipe viewer integration.
+    maven { url = 'https://maven.blamejared.com' }
+}
+
+dependencies {
+    // Compile against the JEI API; load the full JEI mod at dev runtime for testing.
+    compileOnly "mezz.jei:jei-${jei_mc}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${jei_mc}-neoforge-api:${jei_version}"
+    runtimeOnly "mezz.jei:jei-${jei_mc}-neoforge:${jei_version}"
 }
 
 // Expand gradle.properties values into resource files (neoforge.mods.toml, pack.mcmeta).

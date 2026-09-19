@@ -2,6 +2,8 @@ package com.arrowfletching;
 
 import com.arrowfletching.entity.ModEntities;
 import com.arrowfletching.item.ModItems;
+import com.arrowfletching.menu.ModMenus;
+import com.arrowfletching.recipe.ModRecipes;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
@@ -21,11 +23,16 @@ public class ArrowFletching {
     public ArrowFletching(IEventBus modEventBus) {
         ModItems.ITEMS.register(modEventBus);
         ModEntities.ENTITY_TYPES.register(modEventBus);
+        ModMenus.MENUS.register(modEventBus);
+        ModRecipes.RECIPE_TYPES.register(modEventBus);
+        ModRecipes.RECIPE_SERIALIZERS.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
         // Game-bus handler: clean up the Lichen Arrow's hidden light when its lichen is broken.
         NeoForge.EVENT_BUS.addListener(ModEvents::onBlockBreak);
+        // Game-bus handler: open the custom upgrade menu when a fletching table is right-clicked.
+        NeoForge.EVENT_BUS.addListener(ModEvents::onRightClickBlock);
         // (BreakBlockEvent handler in ModEvents)
     }
 

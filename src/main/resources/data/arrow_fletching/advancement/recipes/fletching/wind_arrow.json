@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_arrow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:arrow"
+          }
+        ]
+      }
+    },
+    "has_modifier": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wind_charge"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_arrow"
+    ],
+    [
+      "has_modifier"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arrow_fletching:fletching/wind_arrow"
+    ]
+  }
+}
