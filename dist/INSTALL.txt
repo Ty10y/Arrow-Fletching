@@ -1,4 +1,4 @@
-Arrow Fletching  v1.1.0  -  Minecraft mod (NeoForge)
+Arrow Fletching  v1.2.0  -  Minecraft mod (NeoForge)
 ====================================================
 
 WHAT THIS IS
@@ -16,6 +16,10 @@ Most effect arrows are crafted by surrounding a payload item with 8 arrows in a
 crafting table (e.g. 8 arrows around 1 TNT -> 8 TNT Arrows). Ore and fish arrows
 are crafted like a normal arrow with the material as the tip (material/stick/feather).
 Mining arrows use 8 arrows around the matching pickaxe.
+
+NEW in 1.2.0 - the Fletching Table: right-click a vanilla fletching table to open
+an arrow upgrade station. The same 8 arrows + 1 modifier yields 16 there (vs 8 at a
+crafting table) for the same modifier cost. A plain arrow craft now makes 8.
 
 
 REQUIREMENTS
@@ -40,7 +44,7 @@ HOW TO INSTALL  (this is the whole process)
    - macOS:    ~/Library/Application Support/minecraft/mods
    - Linux:    ~/.minecraft/mods
 
-3. Copy the file  arrow_fletching-1.1.0.jar  (included in this zip) into that
+3. Copy the file  arrow_fletching-1.2.0.jar  (included in this zip) into that
    mods folder. That's it -- do NOT unzip the jar; it goes in whole.
 
 4. Start Minecraft using the NeoForge profile. The arrows will appear in the
@@ -50,7 +54,7 @@ HOW TO INSTALL  (this is the whole process)
 UPDATING / REMOVING
 -------------------
 - To update: delete the old arrow_fletching-*.jar from mods and drop in the new one.
-- To remove: delete arrow_fletching-1.1.0.jar from the mods folder.
+- To remove: delete arrow_fletching-1.2.0.jar from the mods folder.
 
 
 NOTES
