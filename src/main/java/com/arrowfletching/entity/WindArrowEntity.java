@@ -45,7 +45,7 @@ public class WindArrowEntity extends AbstractEffectArrowEntity {
             double hx = away.x * 0.15;
             double hz = away.z * 0.15;
             entity.setDeltaMovement(motion.x + hx, LAUNCH, motion.z + hz);
-            entity.hurtMarked = true; // forces the velocity to sync to player clients
+            entity.syncVelocity = true; // forces the velocity to sync to player clients
             entity.resetFallDistance();
         }
     }

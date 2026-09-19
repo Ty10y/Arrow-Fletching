@@ -46,7 +46,7 @@ public class FishingRodArrowEntity extends AbstractEffectArrowEntity {
         // Reel in nearby mobs the same way (but not the shooter).
         for (LivingEntity mob : level.getEntitiesOfClass(LivingEntity.class, area, e -> e != owner)) {
             reel(mob, target);
-            mob.hurtMarked = true;       // sync the yank to player clients
+            mob.syncVelocity = true;     // sync the yank to player clients
             mob.resetFallDistance();
         }
     }

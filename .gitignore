@@ -7,3 +7,6 @@ dist/
 .idea/
 *.iml
 eclipse/
+
+# Local working notes
+TODO.md
