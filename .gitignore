@@ -2,6 +2,7 @@
 build/
 bin/
 run/
+dist/
 *.log
 .idea/
 *.iml

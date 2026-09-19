@@ -9,6 +9,8 @@ Fire any of them from a bow or crossbow.
 - **Version:** 1.2.0
 - Ships as a single `.jar`.
 
+**Download:** grab the latest `.jar` from the [Releases page](https://github.com/Ty10y/Arrow-Fletching/releases/latest).
+
 ## Arrows
 
 ### Effect arrows
