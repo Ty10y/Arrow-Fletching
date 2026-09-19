@@ -30,10 +30,10 @@ Fire any of them from a bow or crossbow.
 | Lichen | 8 arrows + glow lichen | Grows glow lichen + a bright hidden light (removed if the lichen is broken) |
 | Membrane | 8 arrows + phantom membrane | Homing: keeps its launch speed and curves toward the nearest mob |
 
-### Ore damage tiers (crafted like a vanilla arrow: material / stick / feather → 4)
-Stone → Flint → Copper → Iron → Gold → Diamond → Netherite, each hitting harder than the last.
+### Ore damage tiers (8 arrows + material → 8)
+Stone (cobblestone) → Flint → Copper ingot → Iron ingot → Gold ingot → Diamond → Netherite ingot, each hitting harder than the last.
 
-### Fish tiers (material / stick / feather → 4)
+### Fish tiers (8 arrows + fish → 8)
 Cod → Salmon → Pufferfish. These fly through water with **no slowdown**.
 
 ### Mining tiers (8 arrows + the matching pickaxe → 8)
