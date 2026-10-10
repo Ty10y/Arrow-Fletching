@@ -1,4 +1,5 @@
 # Arrow Fletching
+<img src="images/curseforge_banner.png" width="2730" height="1536" alt="Curseforge Banner" />
 <img width="2730" height="1536" alt="ArrowFletchingBanner" src="https://github.com/user-attachments/assets/5d6aafd7-ea01-4c27-9463-76cf08821c82" />
 
 A NeoForge mod that adds **31 craftable arrows**, each with custom art and its own effect.
