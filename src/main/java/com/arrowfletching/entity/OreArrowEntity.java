@@ -10,6 +10,7 @@ import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.storage.ValueInput;
 
 /**
  * Shared entity for the material-tier damage arrows (stone..netherite).
@@ -42,6 +43,13 @@ public class OreArrowEntity extends AbstractArrow implements TieredArrow {
     @Override
     public int getVariant() {
         return this.entityData.get(DATA_VARIANT);
+    }
+
+    // The variant isn't saved; rebuild it from the (saved) pickup item so reloaded arrows keep their texture.
+    @Override
+    protected void readAdditionalSaveData(ValueInput input) {
+        super.readAdditionalSaveData(input);
+        this.setVariant(variantFor(this.getPickupItem().getItem()));
     }
 
     /** Order must match the texture array in ClientSetup. */

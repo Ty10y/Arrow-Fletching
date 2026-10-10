@@ -77,3 +77,7 @@ On servers, both the server and every player need the mod.
 
 Targets Minecraft `26.3` / NeoForge `26.3.0.6-beta`, built with ModDevGradle `2.0.147`.
 All version strings live in `gradle.properties`.
+
+## License
+
+Arrow Fletching is licensed under the [GNU AGPL-3.0](LICENSE).
