@@ -45,6 +45,9 @@ public class ModItems {
     public static final DeferredItem<SimpleArrowItem> LICHEN_ARROW =
             ITEMS.registerItem("lichen_arrow", p -> new SimpleArrowItem(p, com.arrowfletching.entity.LichenArrowEntity::new));
 
+    public static final DeferredItem<SimpleArrowItem> FIREWORK_ARROW =
+            ITEMS.registerItem("firework_arrow", p -> new SimpleArrowItem(p, com.arrowfletching.entity.FireworkArrowEntity::new));
+
     // --- Ore/material damage tiers (share OreArrowEntity; damage set here) ---
     private static DeferredItem<SimpleArrowItem> ore(String id, double dmg) {
         return ITEMS.registerItem(id, p -> new SimpleArrowItem(p, com.arrowfletching.entity.OreArrowEntity::new, dmg));

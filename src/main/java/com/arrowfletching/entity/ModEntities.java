@@ -50,6 +50,9 @@ public class ModEntities {
     public static final Supplier<EntityType<LichenArrowEntity>> LICHEN_ARROW =
             registerArrow("lichen_arrow", LichenArrowEntity::new);
 
+    public static final Supplier<EntityType<FireworkArrowEntity>> FIREWORK_ARROW =
+            registerArrow("firework_arrow", FireworkArrowEntity::new);
+
     // Shared entity types for the tiered families + homing.
     public static final Supplier<EntityType<OreArrowEntity>> ORE_ARROW =
             registerArrow("ore_arrow", OreArrowEntity::new);

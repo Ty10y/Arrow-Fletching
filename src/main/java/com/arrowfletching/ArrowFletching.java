@@ -51,6 +51,7 @@ public class ArrowFletching {
             event.accept(ModItems.SLIME_ARROW);
             event.accept(ModItems.FISHING_ROD_ARROW);
             event.accept(ModItems.LICHEN_ARROW);
+            event.accept(ModItems.FIREWORK_ARROW);
             // Ore/material damage tiers
             event.accept(ModItems.STONE_ARROW);
             event.accept(ModItems.FLINT_ARROW);

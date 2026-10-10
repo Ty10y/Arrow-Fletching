@@ -36,6 +36,7 @@ public class ClientSetup {
         simple(event, ModEntities.SLIME_ARROW.get(), "slime_arrow");
         simple(event, ModEntities.FISHING_ROD_ARROW.get(), "fishing_rod_arrow");
         simple(event, ModEntities.LICHEN_ARROW.get(), "lichen_arrow");
+        simple(event, ModEntities.FIREWORK_ARROW.get(), "firework_arrow");
 
         simple(event, ModEntities.MEMBRANE_ARROW.get(), "membrane_arrow");
 

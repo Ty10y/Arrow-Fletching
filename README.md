@@ -1,12 +1,12 @@
 # Arrow Fletching
 <img width="2730" height="1536" alt="ArrowFletchingBanner" src="https://github.com/user-attachments/assets/5d6aafd7-ea01-4c27-9463-76cf08821c82" />
 
-A NeoForge mod that adds **30 craftable arrows**, each with custom art and its own effect.
+A NeoForge mod that adds **31 craftable arrows**, each with custom art and its own effect.
 Fire any of them from a bow or crossbow.
 
 - **Minecraft:** Java Edition 26.3
 - **Loader:** NeoForge 26.3.0.6-beta
-- **Version:** 1.2.1
+- **Version:** 1.3.0
 - Ships as a single `.jar`.
 
 **Download:** grab the latest `.jar` from the [Releases page](https://github.com/Ty10y/Arrow-Fletching/releases/latest).
@@ -28,6 +28,7 @@ Fire any of them from a bow or crossbow.
 | Slime | 8 arrows + slime ball | Slowness VI for 5s |
 | Fishing Rod | 8 arrows + fishing rod | Reels nearby items **and** mobs back toward you |
 | Lichen | 8 arrows + glow lichen | Grows glow lichen + a bright hidden light (removed if the lichen is broken) |
+| Firework | 8 arrows + firework rocket | Bursts into a random-colored, random-shaped firework; nearby mobs take firework damage |
 | Membrane | 8 arrows + phantom membrane | Homing: keeps its launch speed and curves toward the nearest mob |
 
 ### Ore damage tiers (8 arrows + material → 8)
@@ -66,7 +67,7 @@ multiplayer).
 ## Installing
 
 1. Install NeoForge 26.3.0.6-beta (https://neoforged.net) and run the game once.
-2. Put `arrow_fletching-1.2.1.jar` in your `mods/` folder
+2. Put `arrow_fletching-1.3.0.jar` in your `mods/` folder
    (`%appdata%\.minecraft\mods` on Windows).
 3. Launch the NeoForge profile. Arrows appear in the Combat creative tab and craft in survival.
 
