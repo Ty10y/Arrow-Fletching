@@ -1,14 +1,18 @@
 modLoader = "javafml"
 loaderVersion = "${loader_version_range}"
 license = "${mod_license}"
+licenseURL = "https://github.com/Ty10y/Arrow-Fletching/blob/main/LICENSE"
+issueTrackerURL = "https://github.com/Ty10y/Arrow-Fletching/issues"
 
 [[mods]]
 modId = "${mod_id}"
 version = "${mod_version}"
 displayName = "${mod_name}"
 authors = "${mod_authors}"
-logoFile = "arrow_fletching_logo.png"
-logoBlur = false
+displayURL = "https://github.com/Ty10y/Arrow-Fletching"
+iconFile = "arrow_fletching_icon.png"
+iconBlur = false
+bannerFile = "arrow_fletching_banner.png"
 description = '''
 ${mod_description}
 '''

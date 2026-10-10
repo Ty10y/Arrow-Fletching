@@ -19,7 +19,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Shared entity for the mining arrows. Excavates an NxN area (single layer) where it lands;
+ * Shared entity for the mining arrows. Excavates an NxNxN cube where it lands;
  * N is derived from which tier item was fired, so it persists with the arrow's pickup stack.
  */
 public class MiningArrowEntity extends AbstractEffectArrowEntity implements TieredArrow {

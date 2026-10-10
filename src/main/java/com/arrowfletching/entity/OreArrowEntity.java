@@ -65,6 +65,6 @@ public class OreArrowEntity extends AbstractArrow implements TieredArrow {
 
     @Override
     protected ItemStack getDefaultPickupItem() {
-        return new ItemStack(ModItems.FLINT_ARROW.get());
+        return new ItemStack(ModItems.STONE_ARROW.get());
     }
 }

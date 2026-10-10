@@ -33,10 +33,9 @@ public class ArrowFletching {
         NeoForge.EVENT_BUS.addListener(ModEvents::onBlockBreak);
         // Game-bus handler: open the custom upgrade menu when a fletching table is right-clicked.
         NeoForge.EVENT_BUS.addListener(ModEvents::onRightClickBlock);
-        // (BreakBlockEvent handler in ModEvents)
     }
 
-    /** Put the TNT Arrow into the vanilla Combat creative tab. */
+    /** Put every mod arrow into the vanilla Combat creative tab. */
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.TNT_ARROW);

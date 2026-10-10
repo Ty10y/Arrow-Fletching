@@ -6,10 +6,18 @@ Fire any of them from a bow or crossbow.
 
 - **Minecraft:** Java Edition 26.3
 - **Loader:** NeoForge 26.3.0.6-beta
-- **Version:** 1.3.0
+- **Version:** 1.3.1
+- **Optional:** [JEI](https://www.curseforge.com/minecraft/mc-mods/jei) shows Fletching Table recipes. Not required.
 - Ships as a single `.jar`.
 
 **Download:** grab the latest `.jar` from the [Releases page](https://github.com/Ty10y/Arrow-Fletching/releases/latest).
+
+## Screenshots
+
+Firework Arrow bursts, each one random:
+
+<img src="images/firework_arrow_large_ball.webp" width="49%" alt="Large ball firework burst" /> <img src="images/firework_arrow_small_ball.webp" width="49%" alt="Small ball firework burst" />
+<img src="images/firework_arrow_burst.webp" width="49%" alt="Burst firework" /> <img src="images/firework_arrow_creeper.webp" width="49%" alt="Creeper face firework" />
 
 ## Arrows
 
@@ -67,7 +75,7 @@ multiplayer).
 ## Installing
 
 1. Install NeoForge 26.3.0.6-beta (https://neoforged.net) and run the game once.
-2. Put `arrow_fletching-1.3.0.jar` in your `mods/` folder
+2. Put `arrow_fletching-1.3.1.jar` in your `mods/` folder
    (`%appdata%\.minecraft\mods` on Windows).
 3. Launch the NeoForge profile. Arrows appear in the Combat creative tab and craft in survival.
 
@@ -77,6 +85,16 @@ On servers, both the server and every player need the mod.
 
 Targets Minecraft `26.3` / NeoForge `26.3.0.6-beta`, built with ModDevGradle `2.0.147`.
 All version strings live in `gradle.properties`.
+
+## Building from source
+
+Requires JDK 25. The Gradle wrapper downloads everything else.
+
+```
+./gradlew build
+```
+
+The jar lands in `build/libs/`. Run `./gradlew runClient` to launch a test client with the mod (and JEI) loaded.
 
 ## License
 

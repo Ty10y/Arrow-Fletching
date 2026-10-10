@@ -8,7 +8,7 @@ import mezz.jei.api.gui.drawable.IDrawableStatic;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
-import mezz.jei.api.recipe.RecipeType;
+import mezz.jei.api.recipe.types.IRecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.network.chat.Component;
@@ -23,8 +23,8 @@ import net.minecraft.world.level.block.Blocks;
  * Laid out left-to-right: [arrow] + [modifier] -> [result], on JEI's default recipe pane.
  */
 public class FletchingTableCategory implements IRecipeCategory<RecipeHolder<FletchingRecipe>> {
-    public static final RecipeType<RecipeHolder<FletchingRecipe>> RECIPE_TYPE =
-            RecipeType.create(ArrowFletching.MOD_ID, "fletching", asHolderClass());
+    public static final IRecipeType<RecipeHolder<FletchingRecipe>> RECIPE_TYPE =
+            IRecipeType.create(ArrowFletching.MOD_ID, "fletching", asHolderClass());
 
     private static final int WIDTH = 100;
     private static final int HEIGHT = 26;
@@ -47,7 +47,7 @@ public class FletchingTableCategory implements IRecipeCategory<RecipeHolder<Flet
     }
 
     @Override
-    public RecipeType<RecipeHolder<FletchingRecipe>> getRecipeType() {
+    public IRecipeType<RecipeHolder<FletchingRecipe>> getRecipeType() {
         return RECIPE_TYPE;
     }
 
@@ -72,7 +72,7 @@ public class FletchingTableCategory implements IRecipeCategory<RecipeHolder<Flet
     }
 
     @Override
-    public Identifier getRegistryName(RecipeHolder<FletchingRecipe> holder) {
+    public Identifier getIdentifier(RecipeHolder<FletchingRecipe> holder) {
         return holder.id().identifier();
     }
 
@@ -82,7 +82,7 @@ public class FletchingTableCategory implements IRecipeCategory<RecipeHolder<Flet
 
         builder.addSlot(RecipeIngredientRole.INPUT, 2, SLOT_Y)
                 .setStandardSlotBackground()
-                .addItemStack(new ItemStack(Items.ARROW, recipe.arrowCount()));
+                .add(new ItemStack(Items.ARROW, recipe.arrowCount()));
 
         builder.addSlot(RecipeIngredientRole.INPUT, 34, SLOT_Y)
                 .setStandardSlotBackground()
@@ -90,7 +90,7 @@ public class FletchingTableCategory implements IRecipeCategory<RecipeHolder<Flet
 
         builder.addSlot(RecipeIngredientRole.OUTPUT, 80, SLOT_Y)
                 .setOutputSlotBackground()
-                .addItemStack(recipe.resultStack());
+                .add(recipe.resultStack());
     }
 
     @Override

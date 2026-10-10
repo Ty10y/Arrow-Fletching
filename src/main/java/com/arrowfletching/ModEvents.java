@@ -3,8 +3,8 @@ package com.arrowfletching;
 import com.arrowfletching.menu.FletchingTableMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.util.TriState;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.ContainerLevelAccess;
@@ -59,12 +59,13 @@ public final class ModEvents {
         if (player.isSecondaryUseActive() && !player.getItemInHand(event.getHand()).isEmpty()) {
             return;
         }
-        // Suppress BOTH the vanilla block interaction and the held item's use, exactly like a
-        // crafting table. Without denying the item use, a held bow (or other usable item) would
-        // start drawing and fire when the menu closes. Must run on the client too, or the client
-        // predicts the item use before the server says otherwise.
-        event.setUseBlock(TriState.FALSE);
-        event.setUseItem(TriState.FALSE);
+        // Fully consume the click, like a crafting table. Denying use-block/use-item alone isn't
+        // enough: those only cover using the item ON the block, and the client then falls through
+        // to a plain item use, so a held bow starts drawing and fires when the menu closes.
+        // Cancelling with SUCCESS stops that. Must run on the client too, or the client predicts
+        // the item use before the server says otherwise.
+        event.setCanceled(true);
+        event.setCancellationResult(InteractionResult.SUCCESS);
         if (level.isClientSide()) {
             return;
         }
